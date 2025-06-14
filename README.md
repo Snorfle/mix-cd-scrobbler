@@ -1,6 +1,6 @@
 # 🎵 Mix CD Scrobbler
 
-A Python application for scrobbling your vintage mix CD collections to Last.fm. Perfect for music lovers who want to track their listening history from physical media!
+A Python application for scrobbling your vintage mix CD collections to Last.fm. This is basically 95% "vibecoded" in Claude so there's a fair chance there are bugs or other issues, but then again I didn't expect to be sharing it.  I've also got an Android version I can upload if anyone is interested, and then maybe figure out a good way to sync the mix cd json databases.
 
 ## Features
 
@@ -67,14 +67,20 @@ A Python application for scrobbling your vintage mix CD collections to Last.fm. 
 **Format your tracklists like this:**
 ```
 Artist - Track Title [Album Name]
-The Replacements - I Will Dare [Let it Be]
-Ben Folds Five - Brick [Whatever and Ever Amen]
+```
+Such as:
+```
+Menomena - Cough Coughing [I Am the Fun Blame Monster!]
+Bob Dylan - Visions of Johanna [Blonde on Blonde]
+Mica Levi - The End [Jackie (Original Motion Picture Soundtrack)]
 ```
 
 **Tips:**
 - Album name in brackets is optional
 - The app automatically cleans up album names (removes "single", "EP", etc.)
 - Use the bulk paste feature for faster entry
+One other trick, if you have the names on a custom label, just take a picture of it and one of the various AIs out there can just format it correctly for you. :-)
+
 
 ### Scrobbling Options
 
@@ -97,7 +103,7 @@ mix-cd-scrobbler/
 ├── mix_cds.json            # Your CD database (created automatically)
 ├── lastfm_credentials.json # Your API credentials (created on first run)
 ├── requirements.txt        # Python dependencies
-└── README.md              # This file
+└── README.md               # This file
 ```
 
 ## Getting Started
